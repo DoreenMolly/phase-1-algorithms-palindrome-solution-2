@@ -1,11 +1,17 @@
-function isPalindrome(word) {
-  // Write your algorithm here
-}
+  function isPalindrome(word) {
+    for(let start = 0; start<word.length/2; start++){
+      let end = word.length - 1 - start
+      if(word[start] !== word[end]){
+        return false;
+      }
+    }return true;
+  }
 
 /* 
   Add your pseudocode here
 */
-
+//return false if letters don't match with their corresponding ends
+//return true if all corresponding indices are equal 
 /*
   Add written explanation of your solution here
 */
